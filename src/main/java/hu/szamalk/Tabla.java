@@ -28,7 +28,16 @@ public class Tabla {
         return megjelen;
     }
 
-
+    public void elhelyez(int N){
+        Random rnd=new Random();
+        for(int i=0; i<N; i++){
+            int sor= rnd.nextInt();
+            int oszl= rnd.nextInt();
+            if(T[sor][oszl]!=UresCella){
+                T[sor][oszl]='K';
+            }
+        }
+    }
 
 
 }
