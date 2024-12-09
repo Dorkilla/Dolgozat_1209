@@ -13,7 +13,7 @@ public class Tabla {
         for(int i=0; i<T.length; i++){
             for(int j=0; j<T[i].length; j++){
                 this.T[i][j]=this.UresCella;
-                System.out.println(T[i][j]);
+                //System.out.println(T[i][j]);
             }
         }
     }
@@ -24,6 +24,7 @@ public class Tabla {
             for(int j=0; j<T.length; j++) {
                 megjelen += this.T[i][j];
             }
+            megjelen+='\n';
         }
         return megjelen;
     }
@@ -38,6 +39,8 @@ public class Tabla {
             }
         }
     }
+
+
 
 
 }
