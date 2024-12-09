@@ -1,5 +1,6 @@
 package hu.szamalk;
 
+import java.io.IOException;
 import java.util.Random;
 
 public class Tabla {
@@ -40,8 +41,50 @@ public class Tabla {
         }
     }
 
+    public boolean uresOszl(int oszl) {
+        int db=0;
+        for (int i = 0; i < T.length; i++) {
+            if (T[i][oszl] == UresCella);
+            db++;
+        }
+        return !(db != T.length);
+    }
 
 
+    public boolean uresSor(int sor) {
+        int db=0;
+        for(int i=0; i<T.length; i++){
+            if(T[sor][i]==UresCella);
+            db++;
+        }
+        return !(db != T.length);
+    }
+
+
+    public int uresOszlopokSzama(int oszl){
+        int db=0;
+        for(int i=0; i<T.length; i++){
+            if(!(T[i][oszl] != uresOszl())) {
+            }
+            db++;
+        }
+        return db;
+    }
+
+
+    public int uresSorokSzama(int sor){
+       int db=0;
+       for(int i=0; i<T.length; i++){
+           if(!(T[sor][i] != uresSor()));
+           db++;
+       }
+       return db;
+    }
+
+
+    /*public void fajlba()throws IOException {
+        String fajl="src/main/java/hu.szamalk/tabla64.txt";*/
 
 }
+
 
