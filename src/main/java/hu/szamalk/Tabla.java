@@ -18,6 +18,16 @@ public class Tabla {
         }
     }
 
+    public String megjelenit(){
+        String megjelen="";
+        for(int i=0; i<T.length; i++){
+            for(int j=0; j<T.length; j++) {
+                megjelen += this.T[i][j];
+            }
+        }
+        return megjelen;
+    }
+
 
 
 
